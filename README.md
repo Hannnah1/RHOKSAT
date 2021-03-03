@@ -7,7 +7,7 @@ Once you have an ubuntu system up and running, gnuradio can be installed followi
 run the commands under the section titled "ubuntu PPA installation"  
 Next we need to install gnuradio support for the LimeSDR
 That is done through a plugin with installation instructions [here](https://wiki.myriadrf.org/Gr-limesdr_Plugin_for_GNURadio)
-In the very near future we will also need the blocks for satelite encoding and decoding [found here](https://github.com/daniestevez/gr-satellites)  
+In the very near future we will also need the blocks for satelite encoding and decoding [found here](https://github.com/daniestevez/gr-satellites)  The installation instructions can be found [here](https://gr-satellites.readthedocs.io/en/latest/installation_ppa.html#installing-using-the-ubuntu-ppa)
 Important things to note about gnuradio:
   * Properties in a block that are underlined can be changed at runtime.
   * The colors corospond to the type of variable expected/produced.
