@@ -1,7 +1,6 @@
 options:
   parameters:
     author: ''
-    catch_exceptions: 'True'
     category: '[GRC Hier Blocks]'
     cmake_opt: ''
     comment: ''
@@ -23,6 +22,7 @@ options:
     sizing_mode: fixed
     thread_safe_setters: ''
     title: ''
+    window_size: ''
   states:
     bus_sink: false
     bus_source: false
@@ -85,7 +85,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [27, 252]
+    coordinate: [5, 259]
     rotation: 0
     state: true
 - name: analog_sig_source_x_0
@@ -127,7 +127,7 @@ blocks:
     samp_rate: '150000'
     type: fir_filter_ccf
     width: '100'
-    win: window.WIN_HAMMING
+    win: firdes.WIN_HAMMING
   states:
     bus_sink: false
     bus_source: false
@@ -338,7 +338,6 @@ blocks:
     minoutbuf: '0'
     name: '""'
     nconnections: '2'
-    norm_window: 'False'
     showports: 'False'
     tr_chan: '0'
     tr_level: '0.0'
@@ -357,7 +356,7 @@ blocks:
     width7: '1'
     width8: '1'
     width9: '1'
-    wintype: window.WIN_BLACKMAN_hARRIS
+    wintype: firdes.WIN_BLACKMAN_hARRIS
     ymax: '10'
     ymin: '-80'
   states:
