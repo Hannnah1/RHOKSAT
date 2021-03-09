@@ -7,7 +7,17 @@ Most of the tools we are using are built for linux so we opted to run everything
 To replicate the setup really any LTS version of Ubuntu should work. After intalling, be sure to run `sudo apt-get update && apt-get upgrade`.
 
 # Hardware
-We will be using a LimeSDR for both transmitting to and receiving from the cubesat. We will be using the KISS (Keep It Simple Stupid) Protocol. KISS allows transmission of AX.25 packet radio frames containing IP packets over AX.25 protocol.
+The groundstation is using a LimeSDR for both transmitting to and receiving from the cubesat. We will be using the KISS (Keep It Simple Stupid) Protocol. KISS allows transmission of AX.25 packet radio frames containing IP packets over AX.25 protocol.  
+
+
+Onboard the satelite will be an ISIS duplex transceiver.  
+The transmitter operates at a frequency range of 435-438MHz (UHF) and supports BPSK/GMSK with G3RUH Scrambling.
+The possible datarates are 1200, 2400, 4800 and 9600 bits per second.
+
+The Receiver listens at 145.8 - 146MHz (VHF) and only supports FSK with G3RUH scrambling.
+
+
+For both the the transmitter and receiver we are using the AX.25 Link Layer Protocol.
 
 # Software 
 **All software mentioned in this section has already been installed on the computer in the Advanced Physics Lab**
